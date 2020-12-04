@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>账户注册确认页面</title>
+</head>
+<body>
+    {% csrf_token %}
+    <h1 style="margin-left: 100px;">{{ message }}</h1>
+    <script>
+        window.setTimeout("window.location='/login/'", 2000)
+    </script>
+
+</body>
+</html>
